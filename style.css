@@ -1,0 +1,54 @@
+/* @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic");
+@import url("fontawesome-all.min.css"); */
+* {
+  box-sizing: border-box;
+  font-family: 'Source Sans 3', sans-serif;
+}
+
+
+body{
+    background-image: url(images/bg.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#intro-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    height: 374px;
+    width: 840px;
+
+}
+
+#text-container{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 30px;
+  font-size: larger;
+}
+
+#text-container h3{
+   color: lightslategray;
+   font-weight: lighter;
+   margin-top: 0;
+}
+
+#text-container h1{
+  margin-bottom: 0;
+}
+
+
+
+#hero{
+    height: 375px;
+    width: 400px;
+    
+}
+
+
