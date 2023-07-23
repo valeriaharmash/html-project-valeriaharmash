@@ -1,15 +1,64 @@
 
-body{
-    background-image: url(images/bg.jpg);
-    background-size: cover;
-    display: flex;
+*{
+    /* background-image: url(images/bg.jpg);
+    background-size: cover; */
+    /* display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100vh; */
     font-family: 'Source Sans 3', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+/* ---------------- Nav ----------------------- */
+
+
+.nav{
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  padding: 20px;
+  background: rgba(0,0,0, .3);
+  position: sticky;
+  top: 0; 
+  z-index: 100;
+}
+
+.nav svg{
+  width: 41px;
+  height: 41px;
+  fill: currentColor;
+  color: white;
+  opacity: 0.7;
+  margin: 0px 20px 5px 20px;
+}
+
+.nav svg:hover{
+  opacity: 1;
+} 
+
+
+
 /* ---------------- home page --------------------- */
+
+#home{
+display: flex;
+justify-content: center;
+height: 940px;
+}
+
+#home::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  background:  url(images/bg.jpg) no-repeat center center/cover;
+  height: 920px;
+  width: 100%;
+  z-index: -1;
+}
 
 #intro-box{
     display: flex;
@@ -18,6 +67,7 @@ body{
     background-color: white;
     height: 374px;
     width: 840px;
+    margin-top: 200px;
 
 }
 
@@ -44,25 +94,6 @@ body{
     height: 375px;
     width: 400px;
     
-}
-
-.nav svg{
-    width: 41px;
-    height: 41px;
-    fill: currentColor;
-    color: white;
-    opacity: 0.7;
-    margin: 0px 20px 20px 20px;
-}
-
-.nav svg:hover{
-    opacity: 1;
-} 
-
-
-.nav{
-    display: flex;
-    justify-content: center;
 }
 
 
@@ -101,4 +132,107 @@ body{
   
   .tooltip:hover .tooltiptext {
     visibility: visible;
+  }
+
+
+  /* ---------------- About --------------------- */
+
+  #about{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 150px;
+    margin-bottom: 50px;
+    height: 940px;
+  }
+
+  #pic{
+    display: flex;
+  }
+
+  #pic img{
+    width: 575px;
+    height: 400px;
+  }
+
+  #intro{
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 20px;
+  }
+
+  #about h1{
+    font-size: 3rem;
+    margin-bottom: 20px;
+    align-self: center;
+  }
+
+  #about h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+
+
+   /* ---------------- Projects --------------------- */
+
+   #work{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 150px;
+    height: 940px;
+    background-color: beige;
+  }
+
+  #work-intro{
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 20px;
+  }
+
+  #work h1{
+    font-size: 3rem;
+    margin-bottom: 20px;
+    align-self: center;
+  }
+
+  #work h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+
+   /* ---------------- Contact --------------------- */
+
+   #contact{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 150px;
+    height: 940px;
+    background-color: aquamarine;
+  }
+
+  #contact-intro{
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 20px;
+  }
+
+  #contact h1{
+    font-size: 3rem;
+    margin-bottom: 20px;
+    align-self: center;
+  }
+
+  #contact h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
   }
