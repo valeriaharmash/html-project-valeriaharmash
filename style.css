@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+   
 }
 
 /* ---------------- Nav ----------------------- */
@@ -48,7 +49,8 @@ height: 940px;
   position: absolute;
   top: 0;
   right: 0;
-  background:  url(images/bg.jpg) no-repeat center center/cover;
+  /* background:  url(images/bg.jpg) no-repeat center center/cover; */ 
+  background: rgba(0,0,0, .1);
   height: 920px;
   width: 100%;
   z-index: -1;
@@ -59,9 +61,11 @@ height: 940px;
     justify-content: space-between;
     align-items: center;
     background-color: white;
-    height: 374px;
-    width: 840px;
-    margin-top: 200px;
+    /* height: 374px;
+    width: 840px; */
+    height: 650px;
+    width: 1200px;
+    margin-top: 60px;
 
 }
 
@@ -85,8 +89,10 @@ height: 940px;
 
 
 #hero{
-    height: 375px;
-    width: 400px;
+    /* height: 375px;
+    width: 400px; */
+    height: 650px;
+    width: 700px;
     
 }
 
@@ -133,32 +139,44 @@ height: 940px;
 
    /* ---------------- Projects --------------------- */
 
-   #work{
+   #projects{
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-    padding: 150px;
+    padding: 100px;
     height: 940px;
-    background-color: beige;
+    background: rgba(0,0,0, .1);
   }
 
-  #work-intro{
-    padding-top: 100px;
+  #projects-intro{
+    padding-top: 70px;
     display: flex;
     flex-direction: column;
     text-align: justify;
     padding: 20px;
+    background-color: white;
   }
 
-  #work h1{
-    font-size: 3rem;
-    margin-bottom: 20px;
+  #projects h1{
+    font-size: 2rem;
+    margin-bottom: 2px;
     align-self: center;
   }
 
-  #work h2{
-    font-size: 2rem;
+  #projects h2{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: lightslategray;
+  }
+
+   #projects-pic{
+    display: flex;
     margin-bottom: 20px;
+  }
+
+  #projects-pic img{
+    width: 350px;
+    height: 230px;
   }
 
 
@@ -191,3 +209,11 @@ height: 940px;
     font-size: 2rem;
     margin-bottom: 20px;
   }
+
+
+  footer {
+    width: 100%;
+    height: 60px; /* Set your desired footer height */
+    background-color: #333; /* Set your desired background color */
+    color: #fff; /* Set your desired text color */
+}
