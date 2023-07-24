@@ -1,3 +1,4 @@
+const uniqeHome =  document.getElementById('uniqe-home');
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
@@ -7,3 +8,10 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
+uniqeHome.onclick = function() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+  };
