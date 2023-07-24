@@ -1,16 +1,16 @@
 
-*{
-    font-family: 'Source Sans 3', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  font-family: 'Source Sans 3', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
    
 }
 
+
 /* ---------------- Nav ----------------------- */
 
-
-.nav{
+.nav {
   display: flex;
   justify-content: center;
   position: sticky;
@@ -21,7 +21,7 @@
   z-index: 100;
 }
 
-.nav svg{
+.nav svg {
   width: 41px;
   height: 41px;
   fill: currentColor;
@@ -30,46 +30,40 @@
   margin: 0px 20px 5px 20px;
 }
 
-.nav svg:hover{
+.nav svg:hover {
   opacity: 1;
 } 
 
-
-
 /* ---------------- home page --------------------- */
 
-#home{
-display: flex;
-justify-content: center;
-height: 940px;
+#home {
+ display: flex;
+ justify-content: center;
+ height: 940px;
 }
 
-#home::before{
+#home::before {
   content: "";
   position: absolute;
   top: 0;
   right: 0;
-  /* background:  url(images/bg.jpg) no-repeat center center/cover; */ 
   background: rgba(0,0,0, .1);
   height: 920px;
   width: 100%;
   z-index: -1;
 }
 
-#intro-box{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: white;
-    /* height: 374px;
-    width: 840px; */
-    height: 650px;
-    width: 1200px;
-    margin-top: 60px;
-
+#intro-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  height: 650px;
+  width: 1200px;
+  margin-top: 60px;
 }
 
-#text-container{
+#text-container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -77,46 +71,58 @@ height: 940px;
   font-size: larger;
 }
 
-#text-container h3{
-   color: lightslategray;
-   font-weight: lighter;
-   margin-top: 0;
+#text-container h3 {
+  color: lightslategray;
+  font-weight: lighter;
+  margin-top: 0;
 }
 
-#text-container h1{
+#text-container h1 {
   margin-bottom: 0;
 }
 
+#hero {
+  height: 650px;
+  width: 700px;  
+}
 
-#hero{
-    /* height: 375px;
-    width: 400px; */
-    height: 650px;
-    width: 700px;
-    
+#social {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin-bottom: 50px;
+  margin-left: 245px; 
+}
+
+#social svg {
+  width: 41px;
+  height: 41px;
+  padding-right: 10px;
+  fill: currentColor;
+  color: lightslategray;  
 }
 
   /* ---------------- About --------------------- */
 
-  #about{
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-    padding: 150px;
-    margin-bottom: 50px;
-    height: 940px;
+  #about {
+   display: flex;
+   flex-direction: column;
+   box-sizing: border-box;
+   padding: 150px;
+   margin-bottom: 50px;
+   height: 940px;
   }
 
-  #pic{
+  #pic {
     display: flex;
   }
 
-  #pic img{
+  #pic img {
     width: 575px;
     height: 400px;
   }
 
-  #intro{
+  #intro {
     padding-top: 100px;
     display: flex;
     flex-direction: column;
@@ -124,13 +130,13 @@ height: 940px;
     padding: 20px;
   }
 
-  #about h1{
+  #about h1 {
     font-size: 3rem;
     margin-bottom: 20px;
     align-self: center;
   }
 
-  #about h2{
+  #about h2 {
     font-size: 2rem;
     margin-bottom: 20px;
   }
@@ -139,7 +145,7 @@ height: 940px;
 
    /* ---------------- Projects --------------------- */
 
-   #projects{
+   #projects {
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
@@ -148,7 +154,7 @@ height: 940px;
     background: rgba(0,0,0, .1);
   }
 
-  #projects-intro{
+  #projects-intro {
     padding-top: 70px;
     display: flex;
     flex-direction: column;
@@ -157,24 +163,24 @@ height: 940px;
     background-color: white;
   }
 
-  #projects h1{
+  #projects h1 {
     font-size: 2rem;
     margin-bottom: 2px;
     align-self: center;
   }
 
-  #projects h2{
+  #projects h2 {
     font-size: 1.5rem;
     margin-bottom: 10px;
     color: lightslategray;
   }
 
-   #projects-pic{
+   #projects-pic {
     display: flex;
     margin-bottom: 20px;
   }
 
-  #projects-pic img{
+  #projects-pic img {
     width: 350px;
     height: 230px;
   }
@@ -182,7 +188,7 @@ height: 940px;
 
    /* ---------------- Contact --------------------- */
 
-   #contact{
+   #contact {
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
@@ -191,7 +197,7 @@ height: 940px;
     background-color: aquamarine;
   }
 
-  #contact-intro{
+  #contact-intro {
     padding-top: 100px;
     display: flex;
     flex-direction: column;
@@ -199,21 +205,13 @@ height: 940px;
     padding: 20px;
   }
 
-  #contact h1{
+  #contact h1 {
     font-size: 3rem;
     margin-bottom: 20px;
     align-self: center;
   }
 
-  #contact h2{
+  #contact h2 {
     font-size: 2rem;
     margin-bottom: 20px;
   }
-
-
-  footer {
-    width: 100%;
-    height: 60px; /* Set your desired footer height */
-    background-color: #333; /* Set your desired background color */
-    color: #fff; /* Set your desired text color */
-}
