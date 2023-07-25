@@ -203,14 +203,14 @@
 	padding-top: 70px;
 	display: flex;
 	flex-direction: column;
-	text-align: justify;
+	text-align: left;
 	padding: 20px;
 	background-color: white;
 }
 
 #projects h1 {
 	font-size: 2rem;
-	margin-bottom: 2px;
+	margin-bottom: 10px;
 	align-self: center;
 }
 
@@ -222,12 +222,33 @@
 
 #projects-pic {
 	display: flex;
+	position: relative;
 	margin-bottom: 20px;
 }
 
 #projects-pic img {
 	width: 350px;
-	height: 230px;
+	height: 240px;
+}
+
+#project-links {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	margin: 10px;
+}
+
+#project-links svg {
+	width: 31px;
+	height: 31px;
+	fill: currentColor;
+	color: lightslategray;
+	opacity: 0.7;
+	margin-right: 8px;
+}
+
+#project-links svg:hover {
+	opacity: 1;
 }
 
 /* ---------------- Contact --------------------- */
