@@ -46,7 +46,7 @@
 	right: 0;
 	background-image: url(images/bg.jpg);
 	background-size: cover;
-	height: 920px;
+	height: 1020px;
 	width: 100%;
 	z-index: -1;
 }
@@ -113,7 +113,7 @@
 	box-sizing: border-box;
 	padding: 150px;
 	margin-bottom: 50px;
-	height: 940px;
+	height: 1020px;
 }
 
 #pic {
@@ -146,7 +146,7 @@
 	flex-direction: column;
 	box-sizing: border-box;
 	padding: 100px;
-	height: 940px;
+	height: 1020px;
 	background-image: url(images/bg.jpg);
 	background-size: cover;
 }
@@ -189,10 +189,10 @@
 	flex-direction: column;
 	box-sizing: border-box;
 	padding: 150px;
-	height: 940px;
+	height: 1020px;
 }
 
-#fcf-form {
+#contact-form-wrapper {
 	display: block;
 }
 
@@ -211,7 +211,7 @@
 	width: 1200px;
 }
 
-.fcf-form-group {
+.contact-form-group {
 	margin-bottom: 1rem;
 }
 
@@ -256,7 +256,7 @@ textarea.fcf-form-control {
 	height: auto;
 }
 
-label.fcf-label {
+label.contact-form-label {
 	display: inline-block;
 	margin-bottom: 0.5rem;
 }
