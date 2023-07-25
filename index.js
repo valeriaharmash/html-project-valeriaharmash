@@ -1,17 +1,6 @@
-const landing = document.getElementById('landing')
+require('dotenv').config()
+const app = require('./app')
+const chalk = require('chalk')
+const port = process.env.PORT || 3000
 
-document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-	anchor.addEventListener('click', function (e) {
-		e.preventDefault()
-		document.querySelector(this.getAttribute('href')).scrollIntoView({
-			behavior: 'smooth'
-		})
-	})
-})
-
-landing.onclick = function () {
-	window.scrollTo({
-		top: 0,
-		behavior: 'smooth'
-	})
-}
+app.listen(port, () => console.log(chalk.yellow(`Listening on port ${port}`)))

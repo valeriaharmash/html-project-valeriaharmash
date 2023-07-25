@@ -1,1 +1,12 @@
+# IDE
 .vscode
+
+#  Deps
+node_modules/
+
+# Secrets
+.env
+
+# Build files
+public/bundle.js
+public/bundle.js.LICENSE.txt
