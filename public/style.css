@@ -381,6 +381,8 @@ label.contact-form-label {
 	font-weight: lighter;
 }
 
+/* ----------successfully sent email pop-up------------ */
+
 .success-message {
 	position: fixed;
 	top: 150px;

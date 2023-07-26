@@ -1,0 +1,59 @@
+#intro-box {
+	max-width: 90%;
+	max-height: 40%;
+	margin-top: 200px;
+}
+
+#hero {
+	max-width: 55%;
+	max-height: 100%;
+}
+
+/* ---------------- About --------------------- */
+#about h1 {
+	font-size: 2rem;
+}
+
+#pic {
+	flex-direction: column;
+	justify-content: baseline;
+}
+
+#pic img {
+	width: 300px;
+	height: 400px;
+	align-self: center;
+}
+
+#intro p {
+	font-size: 1.2rem;
+}
+
+/* ---------------- Projects --------------------- */
+#projects {
+	height: 1500px;
+}
+
+#projects-pic {
+	display: flex;
+}
+
+#projects-pic img {
+	max-width: 50%;
+}
+
+#projects-intro {
+	padding: 5px;
+}
+
+.project-content {
+	text-align: justify;
+	margin-top: 10px;
+}
+
+/* ---------------- Contact --------------------- */
+
+.fcf-body {
+	max-width: 100%;
+	max-height: 50%;
+}
