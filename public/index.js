@@ -39,8 +39,23 @@ document
 				'Content-Type': 'application/json'
 			},
 			body: JSON.stringify(data)
-		}).catch((error) => {
-			// Handle errors
-			console.error('Error:', error)
 		})
+			.then((response) => {
+				if (response.ok) {
+					const successMessage = document.createElement('div')
+					successMessage.textContent = 'Email is sent successfully'
+					successMessage.classList.add('success-message')
+
+					document.body.appendChild(successMessage)
+
+					setTimeout(() => {
+						document.body.removeChild(successMessage)
+					}, 5000)
+				} else {
+					throw new Error('Email sending failed')
+				}
+			})
+			.catch((error) => {
+				console.error('Error:', error)
+			})
 	})
