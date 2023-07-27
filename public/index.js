@@ -23,7 +23,6 @@ document
 
 		const elements = event.target.elements
 
-		const url = 'http://localhost:3000/api/communications'
 		const data = {
 			name: elements['name'].value,
 			email: elements['email'].value,
@@ -33,7 +32,7 @@ document
 		elements['email'].value = ''
 		elements['message'].value = ''
 
-		fetch(url, {
+		fetch('/api/communications', {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json'
