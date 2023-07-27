@@ -8,5 +8,4 @@ node_modules/
 .env
 
 # Build files
-public/bundle.js
-public/bundle.js.LICENSE.txt
+dist
