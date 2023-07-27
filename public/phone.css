@@ -1,0 +1,94 @@
+/* ---------------- Home --------------------- */
+#home {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+#intro-box {
+	display: flex;
+	flex-direction: column-reverse;
+	width: 100%;
+	margin: 0;
+}
+
+#hero {
+	min-width: 100%;
+	height: auto;
+}
+
+#intro {
+	width: 100%;
+}
+
+#social {
+	display: flex;
+	flex-direction: row;
+	position: relative;
+	margin: 0;
+}
+
+/* ---------------- About --------------------- */
+#about {
+	min-height: auto;
+	padding: 0.625rem;
+	margin-bottom: 0;
+}
+
+#about h1 {
+	margin-top: 0;
+}
+
+#about-content {
+	flex-direction: column;
+	justify-content: baseline;
+}
+
+#about-content img {
+	min-width: 100%;
+	height: auto;
+}
+
+#intro p {
+	font-size: 4vw;
+}
+
+/* ---------------- Projects --------------------- */
+#projects {
+	height: 100%;
+	padding: 100px 10px 20px 10px;
+}
+
+.project-box {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.project-box img {
+	min-width: 100%;
+	height: auto;
+}
+
+#projects-intro {
+	padding: 5px;
+}
+
+.project-content {
+	text-align: justify;
+	margin-top: 10px;
+}
+
+#projects-intro p {
+	font-size: 4vw;
+}
+
+/* ---------------- Contact --------------------- */
+#contact {
+	padding: 40px;
+}
+.fcf-body {
+	max-width: 100%;
+	max-height: 50%;
+}

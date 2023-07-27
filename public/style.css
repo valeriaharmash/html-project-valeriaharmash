@@ -116,11 +116,11 @@
 	height: 1020px;
 }
 
-#pic {
+#about-content {
 	display: flex;
 }
 
-#pic img {
+#about-content img {
 	width: 575px;
 	height: 400px;
 }
@@ -220,13 +220,13 @@
 	color: lightslategray;
 }
 
-#projects-pic {
+.project-box {
 	display: flex;
 	position: relative;
 	margin-bottom: 20px;
 }
 
-#projects-pic img {
+.project-box img {
 	width: 350px;
 	height: 240px;
 }
