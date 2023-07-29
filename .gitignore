@@ -1,12 +1,18 @@
-# IDE
-.vscode
 
-#  Deps
-node_modules/
-
-# Secrets
+# dotenv environment variable files
 .env
 
-# Build files
-public/bundle.js
-public/bundle.js.LICENSE.txt
+# build
+dist
+
+# editors
+.idea
+.vscode
+modules.xml
+
+# OS
+.DS_Store
+
+
+# dependency directories
+node_modules/
