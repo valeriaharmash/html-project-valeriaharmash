@@ -3,7 +3,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const TerserJSPlugin = require('terser-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 
 const isProd = process.env.NODE_ENV === 'production';
@@ -31,19 +31,10 @@ module.exports = {
           }
         ]
       },
+
       {
-        test: /\.(sa|sc|c)ss$/,
-        use: [
-          {
-            loader: MiniCssExtractPlugin.loader,
-          },
-          {
-            loader: 'css-loader',
-          },
-          {
-            loader: 'sass-loader',
-          },
-        ]
+        test: /.s?css$/,
+        use: [MiniCssExtractPlugin.loader, "css-loader"],
       },
       {
         test: /\.(png|svg|jpe?g|gif)$/,
@@ -56,7 +47,7 @@ module.exports = {
     ]
   },
   optimization: {
-    minimizer: isProd ? [new TerserJSPlugin({}), new OptimizeCSSAssetsPlugin({})] : [],
+    minimizer: isProd ? [new TerserJSPlugin({}), new CssMinimizerPlugin({})] : [],
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -68,6 +59,7 @@ module.exports = {
       filename: isProd ? '[name].[contenthash].css' : '[name].css',
       chunkFilename: isProd ? '[id].[contenthash].css' : '[id].css',
     }),
+    new MiniCssExtractPlugin(),
     new CleanWebpackPlugin(),
   ]
 };
