@@ -58,3 +58,15 @@ document
 				console.error('Error:', error)
 			})
 	})
+
+function updateScreenSize() {
+  // Get the screen height and width using JavaScript
+  const screenHeight = window.innerHeight;
+  const screenWidth = window.innerWidth;
+
+  // Update the CSS custom properties with dynamic values
+  document.documentElement.style.setProperty('--screen-height', `${screenHeight}px`);
+  document.documentElement.style.setProperty('--screen-width', `${screenWidth}px`);
+}
+
+window.addEventListener('resize', updateScreenSize);

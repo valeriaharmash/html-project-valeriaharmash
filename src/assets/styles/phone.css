@@ -42,7 +42,6 @@
 
 #about-content {
 	flex-direction: column;
-	justify-content: baseline;
 }
 
 #about-content img {
@@ -71,7 +70,7 @@
 	height: auto;
 }
 
-#projects-intro {
+.projects-intro {
 	padding: 5px;
 }
 
@@ -80,7 +79,7 @@
 	margin-top: 10px;
 }
 
-#projects-intro p {
+.projects-intro p {
 	font-size: 4vw;
 }
 

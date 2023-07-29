@@ -1,5 +1,5 @@
 const router = require('express').Router()
-const { sendEmail } = require('../../utils')
+const { mailgunClient } = require('../../clients')
 require('dotenv').config()
 
 // communications: send email
@@ -7,7 +7,7 @@ router.post('/', async (req, res, next) => {
 	try {
 		const { name, email, message } = req.body
 
-		sendEmail(email, name, message)
+    await mailgunClient.sendEmail(email, name, message)
 
 		res.sendStatus(204)
 	} catch (e) {
